@@ -1,0 +1,13 @@
+D:\online-interviews\codingAssignment\coding-assignment-utils\src\main\java\coding\assignment\utils\requests\UserRequest.java
+D:\online-interviews\codingAssignment\coding-assignment-utils\src\main\java\coding\assignment\utils\constants\Constants.java
+D:\online-interviews\codingAssignment\coding-assignment-utils\src\main\java\coding\assignment\utils\constants\HttpCustomHeader.java
+D:\online-interviews\codingAssignment\coding-assignment-utils\src\main\java\coding\assignment\utils\requests\UserCreationRequest.java
+D:\online-interviews\codingAssignment\coding-assignment-utils\src\main\java\coding\assignment\utils\enums\EntityStatus.java
+D:\online-interviews\codingAssignment\coding-assignment-utils\src\main\java\coding\assignment\utils\i18\impl\MessageServiceImpl.java
+D:\online-interviews\codingAssignment\coding-assignment-utils\src\main\java\coding\assignment\utils\mappers\UsersMapper.java
+D:\online-interviews\codingAssignment\coding-assignment-utils\src\main\java\coding\assignment\utils\dtos\UsersDto.java
+D:\online-interviews\codingAssignment\coding-assignment-utils\src\main\java\coding\assignment\utils\enums\ResponseCode.java
+D:\online-interviews\codingAssignment\coding-assignment-utils\src\main\java\coding\assignment\utils\messages\UsersResponse.java
+D:\online-interviews\codingAssignment\coding-assignment-utils\src\main\java\coding\assignment\utils\i18\api\MessageService.java
+D:\online-interviews\codingAssignment\coding-assignment-utils\src\main\java\coding\assignment\utils\enums\I18Code.java
+D:\online-interviews\codingAssignment\coding-assignment-utils\src\main\java\coding\assignment\utils\config\UtilsConfig.java

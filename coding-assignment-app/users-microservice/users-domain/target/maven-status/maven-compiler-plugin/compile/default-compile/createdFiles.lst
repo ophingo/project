@@ -1,0 +1,4 @@
+users\domain\Users.class
+users\domain\EntityStatus.class
+users\domain\Title.class
+users\domain\DomainMarkerInterface.class

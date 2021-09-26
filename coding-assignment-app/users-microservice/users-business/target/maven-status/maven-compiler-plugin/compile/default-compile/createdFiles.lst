@@ -1,0 +1,7 @@
+users\business\logic\impl\UsersServiceImpl.class
+users\business\logic\api\UsersService.class
+users\business\validations\impl\UsersServiceValidatorImpl.class
+users\business\auditables\api\UsersServiceAuditable.class
+users\business\config\BusinessConfig.class
+users\business\auditables\impl\UsersServiceAuditableImpl.class
+users\business\validations\api\UsersServiceValidator.class

@@ -1,0 +1,7 @@
+users\service\processors\api\UsersProcessor.class
+users\service\rest\UsersResource.class
+users\service\config\UsersServiceConfig.class
+users\service\processors\impl\UsersProcessorImpl.class
+users\service\main\UsersServiceMain.class
+users\service\config\SwaggerConfig.class
+users\service\config\ServiceMarkerInterface.class
