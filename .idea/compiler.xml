@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="users-repository" />
-        <module name="users-domain" />
         <module name="application-gateway" />
+        <module name="users-domain" />
+        <module name="users-repository" />
         <module name="users-business" />
         <module name="discovery-server" />
       </profile>

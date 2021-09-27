@@ -1,10 +1,8 @@
 package users.service.config;
 
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
-import org.springframework.web.client.RestTemplate;
 import users.business.config.BusinessConfig;
 import users.business.logic.api.UsersService;
 import users.service.processors.api.UsersProcessor;

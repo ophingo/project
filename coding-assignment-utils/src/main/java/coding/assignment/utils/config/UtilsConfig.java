@@ -1,5 +1,6 @@
 package coding.assignment.utils.config;
 
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -15,6 +16,8 @@ public class UtilsConfig {
     public RestTemplate restTemplate(){
         return new RestTemplate();
     }
+
+
 
 
 }

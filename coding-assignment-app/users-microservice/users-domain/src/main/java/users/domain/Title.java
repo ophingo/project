@@ -12,6 +12,16 @@ public enum Title {
     public String getTitle() {
         return title;
     }
+    public static Title getEnumFromString(String title) {
+        if( title != null ) {
+            try {
+                return Title.valueOf(title.trim().toUpperCase());
+            }
+            catch(IllegalArgumentException ex) {
+            }
+        }
+        return null;
+    }
 
 }
 

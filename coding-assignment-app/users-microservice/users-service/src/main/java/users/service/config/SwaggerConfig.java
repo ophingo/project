@@ -23,6 +23,7 @@ public class SwaggerConfig {
                 .apis(RequestHandlerSelectors.basePackage("users.service.rest"))
                 .paths(PathSelectors.any())
                 .build();
+
     }
 
     private ApiInfo createApiInfo() {

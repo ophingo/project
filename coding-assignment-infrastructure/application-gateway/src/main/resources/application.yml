@@ -1,0 +1,53 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: golden-application.gateway
+server:
+  port: 9999
+management:
+  endpoints:
+    web:
+      exposure:
+        include: gateway
+  endpoint:
+    gateway:
+      enabled: true
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /api/uaa/api-docs
+
+whitelistInternal:
+  - method: GET
+    path: '/api/**/api-docs'
+  - method: GET
+    path: '/swagger-ui.html'
+  - method: GET
+    path: '/swagger-resources/**'
+
+---
+servers:
+  core-path: http://localhost
+  core-port: 9095
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+  cloud:
+    gateway:
+      routes:
+        - id: users-microservice
+          uri: ${servers.core-path}:${servers.core-port}
+          predicates:
+            - Method=POST,GET,PATCH
+            - Path=/api/users-service/**
+
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev

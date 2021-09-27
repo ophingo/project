@@ -7,7 +7,7 @@ import org.springframework.context.ApplicationContext;
 import users.service.config.ServiceMarkerInterface;
 
 @EnableDiscoveryClient
-@SpringBootApplication(exclude = {org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.class})
+@SpringBootApplication(scanBasePackageClasses = {ServiceMarkerInterface.class}, exclude = {org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.class})
 public class UsersServiceMain {
 
     public static void main(String[] args) {

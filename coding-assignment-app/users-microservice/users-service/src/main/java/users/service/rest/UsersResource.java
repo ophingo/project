@@ -17,7 +17,7 @@ import java.util.Locale;
 
 @RestController
 @CrossOrigin
-@RequestMapping("/users-service/v1/user")
+@RequestMapping("/api/users-service/v1/user")
 public class UsersResource {
     private UsersProcessor usersProcessor;
 

@@ -6,11 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.Generated;
 import org.springframework.stereotype.Component;
+import users.domain.Title;
 import users.domain.Users;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-09-27T00:59:25+0200",
+    date = "2021-09-27T12:31:22+0200",
     comments = "version: 1.2.0.Final, compiler: javac, environment: Java 1.8.0_251 (Oracle Corporation)"
 )
 @Component
@@ -25,7 +26,9 @@ public class UsersMapperImpl extends UsersMapper {
         UsersDto usersDto = new UsersDto();
 
         usersDto.setId( branch.getId() );
-        usersDto.setTitle( branch.getTitle() );
+        if ( branch.getTitle() != null ) {
+            usersDto.setTitle( branch.getTitle().name() );
+        }
         usersDto.setFirstname( branch.getFirstname() );
         usersDto.setSurname( branch.getSurname() );
         usersDto.setDateOfBirth( branch.getDateOfBirth() );
@@ -58,7 +61,9 @@ public class UsersMapperImpl extends UsersMapper {
 
         Users users = new Users();
 
-        users.setTitle( userCreationRequest.getTitle() );
+        if ( userCreationRequest.getTitle() != null ) {
+            users.setTitle( Enum.valueOf( Title.class, userCreationRequest.getTitle() ) );
+        }
         users.setFirstname( userCreationRequest.getFirstname() );
         users.setSurname( userCreationRequest.getSurname() );
         users.setDateOfBirth( userCreationRequest.getDateOfBirth() );

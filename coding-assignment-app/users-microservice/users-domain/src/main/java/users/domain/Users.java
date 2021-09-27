@@ -12,8 +12,11 @@ public class Users {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
-    @Column(name = "title", nullable = false)
-    private String title;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "title", length = 15, nullable = false)
+    private Title title;
+//    @Column(name = "title", nullable = false)
+//    private String title;
     @Column(name = "firstname", nullable = false)
     private String firstname;
     @Column(name = "surname", nullable = false)
@@ -38,11 +41,11 @@ public class Users {
         this.id = id;
     }
 
-    public String getTitle() {
+    public Title getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
+    public void setTitle(Title title) {
         this.title = title;
     }
 
